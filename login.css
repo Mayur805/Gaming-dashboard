@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Ubuntu:ital@1&family=Varela+Round&display=swap&family=Inter:wght@100;200;300;400;500;600;700;800;900');
+body {
+    background-color: #000000;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Sidebar */
+
+.head-nav .ml {
+    display: none;
+}
+
+.head-nav .menu_item {
+    padding-left: 12px;
+}
+
+.head-nav .frame1 {
+    display: block;
+}
+
+.head-nav .frame2 {
+    display: none;
+}
+
+.main-head:hover .frame2 {
+    display: block;
+}
+
+.main-head:hover .frame1 {
+    display: none;
+}
+
+.main-head:hover .ml {
+    display: block;
+}
+
+.head-nav .menu_item:hover {
+    background: linear-gradient(98.73deg, #FE1F27 -52.43%, rgba(254, 31, 39, 0) 82.99%);
+}
+
+.head-nav .menu_item:hover:before {
+    background: linear-gradient(98.73deg, #FE1F27 -52.43%, rgba(254, 31, 39, 0) 82.99%);
+}
+
+.head-nav li:hover a {
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #9c2224;
+}
+
+.head-nav ul {
+    margin-top: 0.85rem;
+    padding: 0;
+    list-style: none;
+}
+
+.head-nav li {
+    position: relative;
+    clear: both;
+    width: 100%;
+    padding: 0;
+    transition: background 400ms;
+}
+
+.head-nav li a {
+    display: flex;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.head-nav a {
+    align-items: center;
+    width: 100%;
+    color: #fefefe;
+    text-decoration: none;
+    transition: color 400ms;
+}
+
+.main-head {
+    position: fixed;
+    width: 52px;
+    z-index: 1;
+    background: #101010;
+    transition: width 400ms;
+}
+
+.main-head:hover {
+    width: 210px;
+}
+
+.main-head:hover .head-nav li:nth-of-type(1) span {
+    transition-delay: 100ms;
+}
+
+.main-head:hover .head-nav li:nth-of-type(2) span {
+    transition-delay: 200ms;
+}
+
+.main-head:hover .head-nav li:nth-of-type(3) span {
+    transition-delay: 300ms;
+}
+
+.main-head:hover .head-nav li:nth-of-type(4) span {
+    transition-delay: 400ms;
+}
+
+.main-head:hover .head-nav span {
+    text-indent: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .head-nav ul {
+        margin-top: 0.23125rem;
+    }
+    .head-nav svg {
+        max-width: 20px;
+    }
+    .main-head {
+        width: 70px;
+        padding: 0 0.925rem;
+    }
+    .main-head .head-nav {
+        padding-left: 7px;
+    }
+    .main-head:hover .head-nav span {
+        text-indent: 1em;
+    }
+    .main-head {
+        display: none;
+    }
+}
+
+
+/* Hero section */
+
+.form-control {
+    background-color: #2B2B2B;
+    border: 1px solid #2B2B2B;
+    border-radius: 4px;
+}
+
+.hero .sign {
+    background: #1A1A1A;
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.hero .sign h1 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 33px;
+    color: #FFFFFF;
+}
+
+.hero .sign p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #DDDDDD;
+}
+
+.hero .form-group label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #DDDDDD;
+}
+
+.hero .sign_btn a {
+    width: 188px;
+    height: 44px;
+    background: #DB0C26;
+    border-radius: 4px;
+    /*  */
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.hero .sign .forget_it a p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #DB0C26;
+}
+
+.hero .sign form p a {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero .sign h1 {
+        font-size: 24px;
+    }
+    .hero .sign p {
+        font-size: 13px;
+    }
+    .hero .form-group label {
+        font-size: 14px;
+    }
+    .hero .sign .forget_it a p {
+        font-size: 13px;
+    }
+    .hero .sign {
+        padding: 23px 34px 0px;
+    }
+    .hero .sign form p a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .hero .sign {
+        padding: 20px 31px;
+    }
+    .hero .sign h1 {
+        font-size: 33px;
+    }
+    .hero .sign p {
+        font-size: 16px;
+    }
+    .hero .form-group label {
+        font-size: 16px;
+    }
+    .hero .sign_btn a {
+        width: 188px;
+        height: 44px;
+        font-size: 16px;
+    }
+    .hero .sign .forget_it a p {
+        font-size: 16px;
+    }
+    .hero .sign form p a {
+        font-size: 16px;
+    }
+}

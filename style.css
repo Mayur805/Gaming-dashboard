@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Ubuntu:ital@1&family=Varela+Round&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+body {
+    background-color: #000000;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav {
+    background: #101010;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.nav .bell i {
+    color: #FE1F27;
+}
+
+.nav .mail {
+    color: #ffffff;
+}
+
+
+/* Sidebar */
+
+.head-nav .ml {
+    display: none;
+}
+
+.head-nav .menu_item {
+    padding-left: 12px;
+}
+
+.head-nav .frame1 {
+    display: block;
+}
+
+.head-nav .frame2 {
+    display: none;
+}
+
+.main-head:hover .frame2 {
+    display: block;
+}
+
+.main-head:hover .frame1 {
+    display: none;
+}
+
+.main-head:hover .ml {
+    display: block;
+}
+
+.head-nav .menu_item:hover {
+    background: linear-gradient(98.73deg, #FE1F27 -52.43%, rgba(254, 31, 39, 0) 82.99%);
+}
+
+.head-nav .menu_item:hover:before {
+    background: linear-gradient(98.73deg, #FE1F27 -52.43%, rgba(254, 31, 39, 0) 82.99%);
+}
+
+.head-nav li:hover a {
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #9c2224;
+}
+
+.head-nav ul {
+    margin-top: 0.85rem;
+    padding: 0;
+    list-style: none;
+}
+
+.head-nav li {
+    position: relative;
+    clear: both;
+    width: 100%;
+    padding: 0;
+    transition: background 400ms;
+}
+
+.head-nav li a {
+    display: flex;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.head-nav a {
+    align-items: center;
+    width: 100%;
+    color: #fefefe;
+    text-decoration: none;
+    transition: color 400ms;
+}
+
+.main-head {
+    position: fixed;
+    bottom: 0;
+    width: 52px;
+    height: 100%;
+    z-index: 1;
+    background: #101010;
+    transition: width 400ms;
+}
+
+.main-head:hover {
+    width: 220px;
+}
+
+.main-head:hover .head-nav li:nth-of-type(1) span {
+    transition-delay: 100ms;
+}
+
+.main-head:hover .head-nav li:nth-of-type(2) span {
+    transition-delay: 200ms;
+}
+
+.main-head:hover .head-nav li:nth-of-type(3) span {
+    transition-delay: 300ms;
+}
+
+.main-head:hover .head-nav li:nth-of-type(4) span {
+    transition-delay: 400ms;
+}
+
+.main-head:hover .head-nav span {
+    text-indent: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: -120px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1pxsolidrgba(0, 0, 0, .15);
+    border-radius: .25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .head-nav ul {
+        margin-top: 0.23125rem;
+    }
+    .head-nav svg {
+        max-width: 20px;
+    }
+    .main-head {
+        width: 70px;
+        padding: 0 0.925rem;
+    }
+    .main-head .head-nav {
+        padding-left: 7px;
+    }
+    .main-head:hover .head-nav span {
+        text-indent: 1em;
+    }
+    .main-head {
+        display: none;
+    }
+}
+
+
+/* //////////////////////////////////////......hero......\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.hero {
+    padding: 0px 22px 0px 78px;
+}
+
+.hero .john h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 40px;
+    color: #FE1F27;
+}
+
+.hero .john .btn {
+    background: #750B0A;
+    border-radius: 8px;
+    width: 135px;
+    height: 39px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.hero p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.hero .video_game {
+    background: #151515;
+    background-image: url(./images/herobg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+}
+
+.hero .video_game .game p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FBFBFB;
+}
+
+.hero .video_game .game h1 {
+    font-weight: 600;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.hero .video_game .game h1 span {
+    color: #FE1F27;
+}
+
+.hero .video_game .know {
+    width: 155px;
+    height: 43px;
+    background: #E00109;
+    box-shadow: 0px 10px 13px rgba(91, 0, 109, 0.05);
+    border-radius: 4px;
+    /*  */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    color: #FFFFFF;
+    margin-right: 32px;
+}
+
+.hero .video_game .play {
+    width: 90px;
+    height: 43px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 13px rgba(91, 0, 109, 0.05);
+    border-radius: 4px;
+    /*  */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    color: #E00109;
+}
+
+.hero .video_game .mask {
+    position: absolute;
+    top: -168px;
+    right: -280px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero .video_game .mask {
+        display: none;
+    }
+    .hero {
+        padding: 0px;
+    }
+    .hero .john h1 {
+        font-size: 34px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    .hero .video_game .game h1 {
+        font-size: 29px;
+    }
+    .hero .video_game .know {
+        width: 120px;
+        height: 34px;
+        font-size: 16px;
+        margin-right: 4px;
+    }
+    .hero .video_game .play {
+        width: 65px;
+        height: 34px;
+        font-size: 16px;
+    }
+    .hero .john .btn {
+        width: 166px;
+    }
+}
+
+
+/* @media only screen and (max-width: 565px) {} */
+
+
+/* //////////////////////////////////////......web_body......\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+/* .web_body {} */
+
+.web_body {
+    padding: 0px 22px 0px 78px;
+}
+
+.web_body .upcoming_tournaments h1 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.web_body .upcoming_tournaments a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FE1F27;
+}
+
+.web_body .upcoming_tournaments .upcomming_card {
+    /* Nairobi / Inside Widget - #202020 */
+    background: #202020;
+    box-shadow: 1px 13px 73px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+}
+
+.web_body .upcoming_tournaments .upcomming_card .card-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.web_body .upcoming_tournaments .upcomming_card .card-text span {
+    color: #FE1F27;
+}
+
+.web_body .upcoming_tournaments .upcomming_card .card-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.web_body .upcoming_tournaments .upcomming_card .price span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FE1F27;
+}
+
+.web_body .upcoming_tournaments .upcomming_card .price p {
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.web_body .achivements h1 {
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.web_body .achivements a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FE1F27;
+}
+
+.web_body .achivements .wing {
+    background: #202020;
+    border-radius: 24px;
+}
+
+.web_body .achivements .wing .time p {
+    background: #080808;
+    border-radius: 4px;
+    color: #FE1F27;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.web_body .achivements .wing .time .time_wing {
+    background: #080808;
+    border-radius: 4px;
+    color: #A5B2BC;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.web_body .achivements .wing .win_game span {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+.web_body .achivements .wing .win_game p {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 14px;
+    color: #FE1F27;
+}
+
+.web_body .achivements .wing .game_left p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 13px;
+    color: #ABA9C2;
+}
+
+.web_body .achivements .wing .progress {
+    background: #FFFFFF;
+    border-radius: 15px;
+    height: 7px;
+    width: auto;
+}
+
+.web_body .achivements .wing .progress .progress-bar {
+    background: #FE1F27;
+    border-radius: 15px;
+}
+
+.web_body .achivements .wing .game_left span {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 13px;
+    color: #FE1F27;
+}
+
+.web_body .challenges h1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.web_body .challenges p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.web_body .challenges .chg_btn .time {
+    width: 121px;
+    height: 37px;
+    background: #FE1F27;
+    border-radius: 4px;
+    /*  */
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.web_body .challenges .chg_btn .rewar {
+    width: 121px;
+    height: 37px;
+    background: #202020;
+    border-radius: 4px;
+    /*  */
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.web_body .challenges .challenges_table table p {
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+.web_body .challenges .challenges_table table .mode {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.web_body .challenges .challenges_table table span {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FE1F27;
+}
+
+.web_body .challenges .challenges_table td {
+    border: none;
+}
+
+.web_body .challenges .challenges_table .dark_tr {
+    background: #202020;
+}
+
+
+/*////////////////////////////////col - 8 team_chat//////////////////////////// */
+
+.web_body .team_chat {
+    background: #151515;
+    border-radius: 24px;
+}
+
+.web_body .team_chat h1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+.web_body .team_chat .hr_team {
+    border: 1px solid #313131;
+}
+
+.web_body .team_chat .user:hover {
+    background: linear-gradient(89.97deg, #FE1F27 -18.4%, rgba(254, 31, 39, 0) 78.98%);
+}
+
+.web_body .team_chat .user h5 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.web_body .team_chat .user p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.web_body .team_chat .user span {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 11px;
+    color: #ABADB5;
+}
+
+.web_body .team_chat .user .user_threedot i {
+    color: #ABADB5;
+    font-size: 16px;
+}
+
+.web_body .game_videos img {
+    border-radius: 24px;
+    backdrop-filter: blur(16px);
+}
+
+@media only screen and (max-width: 768px) {
+    .web_body {
+        padding: 0px;
+    }
+    /* col-md-8 */
+    .web_body .upcoming_tournaments .upcomming_card .card-title {
+        font-size: 16px;
+    }
+    .web_body .upcoming_tournaments .upcomming_card .price span {
+        font-size: 14px;
+    }
+    .web_body .achivements .wing .time p {
+        font-size: 11px;
+    }
+    .web_body .achivements .wing .time .time_wing {
+        font-size: 11px;
+    }
+    .web_body .achivements .wing .win_game span {
+        font-size: 17px;
+    }
+    .web_body .challenges .chg_btn .rewar {
+        width: 98px;
+        height: 37px;
+    }
+    .web_body .challenges .chg_btn .time {
+        width: 98px;
+        height: 37px;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    /* COL-4 */
+    .web_body .challenges .challenges_table table p {
+        font-size: 7px;
+    }
+    .web_body .challenges .challenges_table table span {
+        font-size: 8px;
+    }
+    .web_body .challenges .challenges_table table .mode {
+        font-size: 10px;
+    }
+    .hero .john .btn {
+        width: 161px;
+        height: 30px;
+        font-size: 11px;
+    }
+}
